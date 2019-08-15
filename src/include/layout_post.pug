@@ -1,0 +1,15 @@
+doctype html
+
+block vars
+
+html(lang = "ja", style="background: #c0c0c0; min-width: 1085px")
+    head
+        meta(charset = "utf-8")
+        meta(name = "viewport", content = "width=device-width, initial-scale=1")
+
+        title #{title}
+    body
+        block body
+
+        hr
+        p: a(href = "../index.html") TOPに戻る
