@@ -2,10 +2,9 @@ doctype html
 
 block vars
 
-html(lang = "ja", style="background: #c0c0c0; min-width: 1085px")
+html(lang = "ja")
     head
-        meta(charset = "utf-8")
-        meta(name = "viewport", content = "width=device-width, initial-scale=1")
+        include props/head.pug
 
         title #{title}
     body
@@ -13,3 +12,6 @@ html(lang = "ja", style="background: #c0c0c0; min-width: 1085px")
 
         hr
         p: a(href = "../index.html") TOPに戻る
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+

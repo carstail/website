@@ -4,5 +4,8 @@ block vars
     - var title = "クルマのシッポ";
 
 block body
-    h1 #{title}
-    p coming soon...
+    div(class="container")
+        div(class="center row")
+            img(class="responsive-img", src="static/logo.png")
+            h1(class="header teal-text text-lighten-2") #{title}
+            h5(class="header col s12 light") coming soon...
